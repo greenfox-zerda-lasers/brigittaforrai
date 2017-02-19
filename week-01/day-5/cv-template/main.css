@@ -1,0 +1,187 @@
+html, body
+{
+    margin-top: 0px;
+    padding: 0px;
+    font-family: 'Abril Fatface', cursive;
+    color: #222;
+}
+
+header {
+
+    width: 1280px;
+    height: 405px;
+    background:url("https://github.com/greenfox-academy/teaching-materials/blob/master/tools-and-coding/project-cv/workshop/anakin.png?raw=true") no-repeat;
+    background-size:cover;
+    margin: auto;
+    padding: 0px;
+}
+
+div {
+    width: 800px;
+    margin: auto;
+}
+
+.first, article {
+    padding-top: 40px;
+    width: 680px;
+    padding-left: 300px;
+    padding-right: 300px;
+}
+
+.first p, .first ul {
+    margin-bottom: 30px;
+    font-size: 20px;
+    font-family: 'Josefin Sans', sans-serif;
+    width: 680px;
+    margin: auto;
+    line-height: 150%;
+    color: #222;
+    font-weight: 500;
+    padding-top: 20px;
+
+}
+
+article {
+    width: 680px;
+    margin: auto;
+    padding: 0px;
+}
+
+.divider {
+    background-color: rgb(70, 70, 70);
+    background-size:cover;
+    margin: auto;
+    padding: 0px;
+    margin-top:50px;
+    margin-bottom: 40px;
+    width: 780px;
+}
+
+.first-divider {
+    height: 160px;
+}
+
+.second-divider {
+    height: 200px;
+}
+
+.third-divider {
+    height: 200px;
+}
+
+h1 {
+    font-size: 72px;
+    margin: 0px;
+    padding: 0px;
+    margin-top: 0px;
+    padding-left: 300px;
+    font-weight:100;
+}
+
+h2{
+
+    font-size: 48px;
+    padding-left: 50px;
+    padding-top: 0px;
+    margin: 0px;
+    color: white;
+    font-weight: 100;
+}
+
+.divider h2:first-child {
+    font-size:200px;
+    margin-top:0px;
+    padding: 0px;
+    margin:0px;
+    height: 50px;
+    vertical-align: top;
+
+}
+
+blockquote {
+    font-size: 48px;
+    padding-left: 50px;
+    padding-top: 0px;
+    margin: 0px;
+    color: white;
+    font-weight: 100;
+    position: relative;
+}
+
+blockquote:before {
+    content: " \“ ";
+    position: absolute;
+    top: -50px;
+    left: 0px;
+    font-size: 140px;
+}
+
+h3 {
+    font-size: 36px;
+    margin: 0px;
+    padding-top: 240px;
+    padding-bottom:0px;
+    padding-left: 300px;
+    font-weight: 100;
+}
+
+h4{
+    font-size: 24px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 800;
+    padding: 0px;
+    margin: 0px;
+
+    padding-top: 15px;
+
+}
+
+h5 {
+    font-family: 'Merriweather', serif;
+    font-size: 15px;
+    line-height: 150%;
+    padding-top: 0px;
+    margin-top: 3px;
+    padding-bottom: 0px;
+    font-style: italic;
+    margin-bottom: 0px;
+}
+
+p, ul {
+    font-size: 16px;
+    font-family: 'Josefin Sans', sans-serif;
+    width: 680px;
+    margin: auto;
+    line-height: 150%;
+    color: #222;
+    font-weight: 500;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
+
+
+
+li {
+    width: 640px;
+}
+
+article h4:first-child {
+    text-transform:uppercase;
+    margin-top:0px;
+    margin-bottom: 40px;
+
+}
+
+hr {
+    width: 680px;
+    border-bottom: 3px solid black;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: #333;
+}
+
+ul {
+    list-style-type: square;
+}

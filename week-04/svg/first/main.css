@@ -1,0 +1,41 @@
+.graphics_container {
+  width: 400px;
+  height: 400px;
+  background: white;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.rect01 {
+  fill: yellow;
+  stroke:purple;
+  stroke-width:15;
+  opacity:0.8;
+  transition: stroke 2s;
+  transition: fill 2s;
+  width: 200px;
+  height: 200px;
+}
+
+.rect01:hover {
+  fill: black;
+  stroke: red;
+}
+
+.rect02 {
+  fill:pink;
+  stroke: tomato;
+  stroke-width:5;
+  rx: 50px;
+  top: 100px;
+  opacity:1;
+  transition: stroke 2s;
+  transition: fill 2s;
+  width: 100px;
+  height: 100px;
+}
+
+.rect02:hover {
+  fill: white;
+  stroke: orange;
+}

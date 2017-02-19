@@ -1,0 +1,119 @@
+article {
+    border-bottom: 2px solid black;
+    width: 600px;
+    margin: 25px;
+    padding-bottom: 20px;
+    
+}
+
+article p {
+    text-align:justify;
+    line-height: 100%;
+    
+}
+
+
+
+#one img {
+    float:left;
+    margin-right: 25px;
+    padding-bottom: 10px;
+    
+}
+
+#two img {
+    float:right;
+    margin-left: 25px;
+    padding-bottom: 10px;
+}
+ 
+
+article:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+/********************popup********/
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.pop-up {
+    box-sizing: border-box;
+    width: 250px;
+    height: 150px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 15px;
+    position: relative;
+    top: -290px;
+    left: 210px;
+}
+
+.close {
+    box-sizing: border-box;
+    background-color: black;
+    width: 20px;
+    height: 20px;
+    border-radius: 100px;
+    position: absolute;
+    top: -10px;
+    left: 210px;
+}
+
+.close p {
+    box-sizing: border-box;
+    color: white;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    font-size: 0.6em;
+    position: absolute;
+    top: 5px;
+    left:-1px;
+}
+
+.first-line {
+    box-sizing: border-box;
+    color: red; 
+    position: absolute;
+    width: 100%;
+    top: 10px;
+    left: 0px;
+    padding-left: 20px;
+}
+
+.second-line {
+    box-sizing: border-box;
+    padding: 20px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    position: absolute;
+    width: 100%;
+    top: 35px;
+    left: 0px;
+}
+
+.ok, .cancel{
+    background-color: darkgray;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 8px 5px 8px 5px;
+    position: absolute;
+    top: 105px;
+}
+
+.ok {
+    left: 140px; 
+}
+
+.cancel {
+    left: 177px;
+}
+
+
+

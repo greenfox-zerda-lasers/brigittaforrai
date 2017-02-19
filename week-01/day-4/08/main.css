@@ -1,0 +1,26 @@
+body {
+    margin-left: 100px;
+    margin-top: 40px;
+}
+
+p {
+    width: 200px;
+    padding: 30px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    border: 2px solid black;  
+    background: transparent url(https://github.com/greenfox-zerda-lasers/syllabus/raw/master/week-01/4-html-css/duck.png) no-repeat;
+}
+
+.first {
+    background-position: left center; 
+}
+
+.second {
+    background-position: center center; 
+}
+
+.third {
+    background-position: right bottom;
+}
+

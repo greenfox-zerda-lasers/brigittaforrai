@@ -1,0 +1,150 @@
+<!doctype html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+</head>
+    
+<body>
+    
+    
+    <form action="/my-handling-form-page" method="post" id="myForm">
+        <h1>Profil</h1>
+        <container> 
+            <div class="szemelyes_block">
+                <h2>Személyes adatok</h2>
+
+                    <div class="name_block">
+                    <label id="name" for="name">Név</label>
+                    <input type="text" id="name" name="user_name">
+                </div>
+                <div class="yearAndGender_block">
+                <div class="born_block">
+
+                    <label for="bornYear">Születési éved</label>
+                    <input placeholder="pl 1984" type="number" id="bornYear" name="user_bornYear">
+                </div>
+
+                <div class="gender_block">
+
+                    <label for="gender">Nemed</label>
+                    <input type="radio" value="female" id="female" name="user_gender" checked>Nő
+                    <input type="radio" value="male" id="male" name="user_gender">Férfi<br>
+                </div>
+                </div>
+
+
+                <div class="brands_block">
+
+                    <label for="brands">Milyen márkákat szeretsz?</label>
+                    <ul>
+                        <li><div class="new_checkbox"></div><input type="checkbox" name="brands" value="brands">Adidas</li>
+                        
+                        <li><div class="new_checkbox"></div><input type="checkbox" name="brands" value="brands">Apple</li>
+                        
+                        <li><div class="new_checkbox"></div><input type="checkbox" name="brands" value="brands">Coca-Cola</li>
+                        
+                        <li><div class="new_checkbox"></div><input type="checkbox" name="brands" value="brands">Mazda</li>
+                        
+                        <li><div class="new_checkbox"></div><input type="checkbox" name="brands" value="brands">Nike</li>
+                     
+                        <li><div class="new_checkbox"></div><input type="checkbox" name="brands" value="brands">Opel</li>
+                            
+                        <li><div class="new_checkbox"></div><input type="checkbox" name="brands" value="brands">Ray-Ban</li>
+                            
+                        <li><div class="new_checkbox"></div><input type="checkbox" name="brands" value="brands">Starbucks</li>
+                            
+                        <li><div class="new_checkbox"></div><input type="checkbox" name="brands" value="brands">Tesla</li>
+                            
+                        <li><div class="new_checkbox"></div><input type="checkbox" name="brands" value="brands">Yahoo</li>
+                    </ul>
+                    <span>Többet is választhatsz!</span>
+
+                </div>
+            </div>
+
+
+            <div class="kapcsolat_block">
+
+                <h2>Kapcsolat</h2>
+
+                <div class="phone_block">
+
+                    <label for="phone" id="phone">Telefonszám</label>
+                    <input placeholder="+36 -- --- ----"type="number" id="phone" name="user_phone">
+                </div>
+
+                <div class="mail_block">
+
+                    <label id="mail" for="mail">E-mail cím</label>
+                    <input placeholder="nev@domain.hu"type="email" id="mail" name="user_mail">
+                </div>
+
+                <div class="facebook_block">
+
+                    <label for="facebook">Facebook profilod</label>
+                    <input placeholder="https://facebook.com/..."type="url" id="facebook" name="user_facebook">
+                </div>
+
+                <div class="twitter_block">
+
+                    <label for="twitter">Twitter profilod</label>
+                    <input placeholder="https://twitter.com/..."type="url" id="twitter" name="user_twitter">
+                </div>
+
+                <div class="house_block">
+
+                    <label >Milyen házban laksz?</label>
+                    <select>
+                        <option value="choose">Válassz típust</option>
+                        <option value="kertes">Kertes</option>
+                        <option value="tegla">Tégla</option>
+                        <option value="panel">Panel</option>
+                    </select>
+                    
+                </div>
+                
+            </div>
+            </container>
+
+            
+                <div class="about_block">
+                    <label for="about">Bemutatkozás</label>
+                    <textarea>Irj magadról pár mondatot!</textarea>
+                </div>
+
+                <div class="cv">
+                    <label>CV feltöltése</label>
+                    <label for="cv" class="button1">File kiválasztása</label>
+                    <input type="file" id="cv">
+                </div>
+
+                <div>
+                    <input type="checkbox">
+                    <label class="conditions">Elfogadom a felhasználási feltételeket</label>
+                </div>
+
+                <div class="buttons">
+                    <div>
+                        
+                        <div>
+                            <button class="button2" form="myForm" type="submit" value="Submit">Mentés</button>  
+                        </div>
+                    
+                        <div>
+                            <button class="button3" form="myForm" type="reset" value="Submit">Mentés</button> 
+                        </div>
+                        
+                    </div>
+                </div>
+        
+            
+    
+        
+    </form>
+    
+    
+</body>
+
+</html>

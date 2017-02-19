@@ -1,0 +1,15 @@
+{
+  "name": "01",
+  "version": "1.0.0",
+  "description": "nincs",
+  "main": "httpserver.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "nincs"
+  },
+  "author": "me",
+  "license": "ISC"
+}

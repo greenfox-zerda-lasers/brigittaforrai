@@ -1,0 +1,20 @@
+{
+  "name": "server-example",
+  "version": "1.0.0",
+  "description": "nincs",
+  "main": "server.js",
+  "scripts": {
+    "test": "node test.js | faucet"
+  },
+  "author": "me",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.14.0"
+  },
+  "repository": "nincs",
+  "devDependencies": {
+    "eslint": "^3.12.2",
+    "eslint-config-airbnb-base": "^11.0.0",
+    "eslint-plugin-import": "^2.2.0"
+  }
+}

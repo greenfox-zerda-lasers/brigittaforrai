@@ -1,0 +1,14 @@
+{
+  "name": "01_with_express",
+  "version": "1.0.0",
+  "description": "",
+  "main": "01_express.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "me",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}

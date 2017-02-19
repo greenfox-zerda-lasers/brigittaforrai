@@ -1,0 +1,27 @@
+<!--Add a click event listener to a <button> and console.log its innerHTML-->
+
+<!doctype html>
+<html>
+  <head>
+    <style>
+      button {
+        width: 200px;
+        height: 100px;
+        background-color: pink;
+      }
+    </style>
+  </head>
+  <body>
+    <button>button</button>
+
+    <script>
+      function content(event) {
+        console.log(button.innerHTML)
+      }
+      var button = document.querySelector("button")
+      button.addEventListener("click", content)
+    </script>
+    <script src="06.js"></script>
+
+  </body>
+</html>

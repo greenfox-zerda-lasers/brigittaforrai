@@ -1,0 +1,147 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.logo {
+  background-image: url("logo.gif");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 100%;
+  height: 6vw;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top : -1vw;
+  z-index: 200;
+}
+
+.container {
+  background-color: #fff;
+  width: 100%;
+  height: auto;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.imgViewer {
+  width: 62vw;
+  height: 35vw;
+  overflow: hidden;
+}
+
+.imageHolder {
+  width: 62vw;
+  height: 35vw;
+  display: flex;
+  position: relative;
+  transition: all 1s ease;
+}
+
+.iframeHolder {
+  width: 62vw;
+  height: 35vw;
+  flex-shrink: 0;
+}
+
+.titleOverlay {
+  background-color: rgba(255, 255, 255, 0.5);
+  margin-top: 1vw;
+  height: auto;
+  width: 100%;
+  padding-left: 19vw;
+  padding-right: 19vw;
+  opacity: 0.8;
+  transition: opacity 1s;
+}
+
+.titleOverlay:hover {
+  opacity: 0.7;
+  transition: opacity 1s;
+}
+
+h1 {
+  font-size: 22px;
+  font-weight:bold;
+  padding-bottom: 1vw;
+}
+
+p {
+  font-size: 17px;
+  font-weight: 100;
+}
+
+.videoTitle, .description {
+  color: black;
+  font-family: Helvetica;
+  text-align: center;
+}
+
+.left {
+  background: transparent url("left.svg") no-repeat center center;
+  float: left;
+  transition: background 0.3s;
+}
+
+.right {
+  background: transparent url("right.svg") no-repeat center center;
+  float: right;
+  transition: background 0.3s;
+}
+
+.left:hover {
+  background: transparent url("leftflipped.svg") no-repeat center center;
+  transition: background 0.3s;
+}
+
+.right:hover {
+  background: transparent url("rightflipped.svg") no-repeat center center;
+  transition: background 0.3s;
+}
+
+.button {
+  width: 3vw;
+  height: 3vw;
+  background-size: cover;
+  margin: 1.5vw;
+  outline: none;
+  border: none;
+}
+
+.thumbnailHolder {
+  margin: auto;
+  width: 62vw;
+  height: 5vw;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  padding-top: 1vw;
+  overflow: hidden;
+  flex-wrap: wrap;
+}
+
+.thumbnail {
+  width: 7vw;
+  height: 4vw;
+  background-color: red;
+  margin-left: 0.5vw;
+  margin-right: 0.5vw;
+  margin-bottom: 1vw;
+  transition: all 0.2s ease;
+  flex-shrink: 0;
+}
+
+.thumbnail:hover:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: rgba(91, 235, 244, 0.5);
+  background-blend-mode: overlay;
+}

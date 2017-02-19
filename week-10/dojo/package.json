@@ -1,0 +1,19 @@
+{
+  "name": "dojo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test/index.js | faucet"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.14.0",
+    "faucet": "0.0.1"
+  },
+  "devDependencies": {
+    "supertest": "^2.0.1",
+    "tape": "^4.6.3"
+  }
+}

@@ -1,0 +1,36 @@
+body {
+    margin-left: 50px;
+}
+
+h1 {
+    color: blue;
+    font-size: 30px;
+}
+
+h2 {
+    color: #eeaf08;
+    font-size: 23px;
+}
+
+
+ul {
+    color: blue;
+    list-style-type:square;
+}
+
+.apple {
+    color: red;
+    list-style-type:disc;
+}
+
+.black {
+    color: black;
+    list-style-type:disc;
+}
+
+ol li {
+    color: black;
+}
+
+
+

@@ -1,0 +1,20 @@
+1.to display the fields restaurant_id, name, borough and cuisine, but exclude the field _id for all the documents in the collection restaurant.
+> db.restaurants.find({},{name:true, restaurant_id: true, borough: true, cuisine: true, _id: false})
+
+2. to display the fields restaurant_id, name, borough and zipcode, but exclude the field _id for all the documents in the collection restaurant.
+>db.restaurants.find({}, {restaurant_id: true, name: true, borough: true, "address.zipcode": true, _id: false})
+
+3. first 5 records for borough: bronx
+db.restaurants.find({borough: "Bronx"}).limit(5).pretty()7
+
+4.to find the restaurants that achieved a score, more than 80 but less than 100.
+> db.restaurants.find({"grades.score": {$gt: 80, $lt: 100} }, {name: true, "grades.score": true, _id: false}).pretty()
+
+5.to find the restaurants which locates in latitude value less than -95.754168.
+> db.restaurants.find({"address.coord.0": {$lt: -95}}).pretty()
+
+6.to find the restaurants that does not prepare any cuisine of 'American' and their grade score more than 70 and lattitude less than -65.754168.
+> db.restaurants.find({"address.coord.0": {$lt: -65}, "grades.score": {$gt: 70}, "cuisine": {$regex:/American/}}).pretty()
+
+
+meeeegoldasok : http://www.w3resource.com/mongodb-exercises/

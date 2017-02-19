@@ -1,0 +1,78 @@
+* {
+    border: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+    
+}
+
+header {
+    background-color: aqua;
+    height: 100px;
+    position: fixed;
+    width: 100%;
+}
+
+h1 {
+    float: left;
+    margin-top: 30px;
+    margin-left: 20px; 
+}
+
+ul {
+    float: right;
+    margin-top: 15px;
+    
+    
+}
+
+li {
+    display: inline-block;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+article:before {
+    content: "";
+    display: block;
+    clear: both; 
+    height: 120px;
+}
+
+article {
+    width: 80%;
+    margin: 0px auto 20px auto;
+    
+}
+
+h2 {
+    font-size: 2em;
+    border-bottom: 1px solid gray;
+    padding-bottom: 10px;
+    
+}
+
+p {
+    margin-top: 20px;
+    width: 100%;
+}
+
+li:active {
+    background-color: white; 
+}
+
+li:hover {
+    background: white;
+}
+
+li:visited {
+    background-color: white;
+}
+
+.visited {
+    background-color: white;
+}

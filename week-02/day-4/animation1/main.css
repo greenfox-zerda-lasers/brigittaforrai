@@ -1,0 +1,103 @@
+* , .back:before, .back:after {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+}
+
+.container {
+  position: relative;
+  background-color: #333333;
+  width: 500px;
+  height: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 200px;
+}
+
+
+.back {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  background-color: white;
+  transform: rotateZ(45deg);
+  margin-left: auto;
+  margin-right: auto;
+  top: 190px;
+  right: 190px;
+}
+
+.back:after {
+  content:"";
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  background-color: rgba(0, 0, 0, 0);
+  border: 3px solid #ff6347;
+  z-index: 2;
+  transform: rotateZ(45deg);
+  margin-left: auto;
+  margin-right: auto;
+  transition: 0.5s;
+}
+
+.back:before {
+  content: "HOVER";
+  position: absolute;
+  top: 53px;
+  left: 34px;
+  transform: rotateZ(-45deg);
+  font-weight: bolder;
+  font-family: arial;
+  color: #333;
+  transition: color 0.5s;
+}
+
+.back:hover:before{
+  color: #ff6347;
+}
+
+.back:hover:after {
+  transform: rotateZ(90deg);
+  cursor: pointer;
+}
+
+
+
+/*
+
+.anim {
+  width: 120px;
+  height: 120px;
+  background-color: rgba(0, 0, 0, 0);
+  border: 3px solid #ff6347;
+  position: absolute;
+  top: 190px;
+  right: 190px;
+  transition:  0.5s;
+}
+
+.anim:hover {
+  transform: rotateZ(45deg);
+  cursor: pointer;
+}
+
+
+
+p {
+  transform: rotateZ(-45deg);
+  position: absolute;
+  top: 50px;
+  left: 30px;
+  color: #333333;
+  font-family: arial;
+  font-weight: bolder;
+}
+
+.p:hover  {
+  color: #ff6347;
+}

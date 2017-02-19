@@ -1,0 +1,146 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+body {
+  background-color: #50e3c2;
+}
+
+form {
+  padding: 60px 60px 80px 60px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #f7f7f7;
+  width: 520px;
+  height: 340px;
+  text-align: center;
+  box-shadow: 0 0 1em #9b9b9b;
+  border-radius: 3px;
+  transition: all 0.5s;
+}
+
+.heading {
+  font-size: 64px;
+  font-weight: 100;
+  color: #9b9b9b;
+  padding-bottom: 60px;
+}
+
+.user_input {
+  margin: auto;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.userInput {
+  height: 60px;
+  width: 83%;
+  font-size: 26px;
+  font-weight: 100;
+  color: #9b9b9b;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border: solid 2px #9b9b9b;
+  border-right: solid 0px #9b9b9b;
+  padding: 15px;
+}
+
+.userInput:focus {
+  outline: none;
+  border: solid 2px #df69e8;
+}
+
+button {
+  height: 60px;
+  width: 17%;
+  font-weight: normal;
+  font-size: 26px;
+  background-color: #df69e8;
+  color: #fff;
+  border: none;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border: solid 2px #9b9b9b;
+}
+
+button:active {
+  outline: none;
+  background-color: #339999;
+}
+
+button:focus {
+  outline: none;
+}
+
+.task {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  align-items: center;
+  height: 60px;
+  overflow: hidden;
+  text-align: left;
+  transition: opacity 0.3s;
+}
+
+label {
+  font-size: 24px;
+  line-height: 40px;
+  color: #9b9b9b;
+  display: inline-block;
+  height: 40px;
+}
+
+.check {
+  display: flex;
+  justify-content: flex-end;
+  margin-left: 10px;
+}
+
+.box {
+  width: 33px;
+  height: 33px;
+  border-radius: 50px;
+  border: solid 2px #9b9b9b;
+  margin-left: 10px;
+  margin-right: 5px;
+}
+
+.box:hover {
+  border: solid 2px #df69e8;
+}
+
+.checked {
+  background-color: #df69e8;
+  background-image: url('checked.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hidden {
+  display: none;
+}
+
+.trash {
+  width: 33px;
+  height: 33px;
+  margin-left: 10px;
+  margin-right: 5px;
+  background-image: url("trash.svg");
+}
+
+.trash:hover {
+  background-image: url("trash_pink.svg");
+}
+
+.trash:active {
+  background-image: url("trash_pink.svg");
+}

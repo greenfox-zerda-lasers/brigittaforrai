@@ -1,0 +1,265 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+head, body {
+    font-family: 'Montserrat', sans-serif;
+    color: #4a4261;
+}
+
+form {
+    padding-top: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    background-color: #dcd6cd;
+    width: 820px;
+    height: 1000px;
+
+}
+
+container {
+    max-width:100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.kapcsolat_block {
+    display: flex;
+    max-width: 300px;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.szemelyes_block {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    flex-grow: 1;
+}
+
+.about_block{
+    display: block;
+    width: 100%;
+
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: 100;
+    display: block;
+    margin-bottom: 3%;
+}
+
+h2 {
+    background-color: #938c97;
+    border-radius: 3px;
+    height: 18px;
+    display: inline-block;
+    font-size: 16px;
+    color: white;
+    font-weight: 100;
+    width: 100%;
+    height: 36px;
+    padding: 10px;
+    margin: 5% auto 1% auto;
+    float: left;
+}
+
+label {
+    font-size: 14px;
+    font-weight: bold;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    display: block;
+
+
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+li {
+    list-style-type: none;
+    font-size: 14px;
+    font-weight: 100;
+    padding-top: 10px;
+    width: 150px;
+    flex-grow: 1;
+    display: inline-block;
+}
+
+
+
+span {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: block;
+    font-size: 14px;
+    font-weight: 100;
+    color: #9f9c98;
+    width: 300px;
+}
+
+
+input[type=text], input[type=url], input[type=email], input[type=number]{
+    box-shadow: 2px;
+    border: 1px solid #626263;
+    border-radius: 3px;
+    height: 36px;
+    width: 300px;
+    margin-bottom: 5px;
+    padding-left: 10px;
+}
+
+input[type="file"], input[type="checkbox"], input[type="submit"], input[type="reset"], input[type=radio] {
+    display: none;
+}
+
+input[id=bornYear]{
+    width: 80px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="url"]:focus,
+select:focus,
+textarea:focus {
+  border: 2px solid pink;
+  transition: 0.2s;
+}
+
+
+
+select{
+    box-shadow: 2px;
+    border: 1px solid #dcd6cd;
+    border-radius: 3px;
+    height: 36px;
+    width: 300px;
+    margin-bottom: 5px;
+    border: 1px solid #626263;
+    padding-left: 10px;
+}
+
+
+.born_block, .gender_block {
+    width: 150px;
+    margin: 0px;
+}
+
+.yearAndGender_block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+textarea {
+    width: 620px;
+    height: 165px;
+    border-radius: 3px;
+    padding-left: 10px;
+    padding-top: 10px;
+    color: #9f9c98;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 100;
+}
+
+.cv {
+    display: block;
+}
+
+
+
+.button1 {
+    width: 37%;
+    height: 33px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 14px;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    background: linear-gradient(0deg, rgba(233,230,235,1) 0%, rgba(255,255,255,1) 96%, rgba(255,255,255,1) 100%);
+    color: #4a4261;
+    font-weight: 100;
+    text-align: center;
+
+}
+
+.conditions {
+    display: inline-block;
+    padding: 20px;
+    font-size: 14px;
+    font-weight: 100;
+    color: #9f9c98;
+}
+
+
+
+.button2, .button3 {
+    border-radius: 3px;
+    padding: 10px 20px 10px 20px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    border: 1px solid #4a4261;
+
+
+}
+
+.button2 {
+    background: linear-gradient(0deg, rgba(62,55,82,1) 0%, rgba(81,72,106,1) 100%);
+    color: #dcd6cd;
+    font-size: 20px;
+    font-weight: 100;
+    width: 220px;
+    text-align: center;
+}
+
+.button3 {
+    background: linear-gradient(0deg, rgba(233,230,235,1) 0%, rgba(255,255,255,1) 96%, rgba(255,255,255,1) 100%);
+    color: #4a4261;
+    font-size: 14px;
+    font-weight: 100;
+    width: 160px;
+    line-height: 24px
+}
+
+.buttons div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+select[value="choose"] {
+    color: red;
+}
+
+#name::after, #phone::after, #mail::after {
+    content: "*";
+    color: tomato;
+    padding-left: 3px;
+}
+
+
+.new_checkbox {
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    border-radius: 20px;
+    margin-right: 10px;
+    background-color: white;
+}
